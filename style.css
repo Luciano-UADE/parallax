@@ -3,6 +3,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-color: #3ab0d4;
+  --secondary-color: #081f40;
+  --btn-color: #f7c95e;
+  --background-color: #031531;
+  --title-color: #84abdc;
+  --text-color: #fff;
+  --type-paragraph-small: 0.65rem;
+  --type-paragraph-md: 1rem;
+  --type-paragraph-large: 2rem;
+  --type-paragraph-footer-mini: 0.4rem;
 }
 
 .container {
@@ -178,7 +193,200 @@ img {
   border-bottom: 3px solid #fff;
 }
 
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.portfolio_intro {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.7;
+  padding: 1em;
+  background-color: var(--secondary-color);
+}
+
+.portfolio_title {
+  font-size: var(--type-paragraph-large);
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--title-color);
+  background-color: var(--secondary-color);
+  width: 60%;
+  margin: 0 auto;
+}
+
+.portfolio_text {
+  font-weight: 300;
+  font-size: var(--type-paragraph-md);
+  text-align: center;
+}
+
+.portfolio_container {
+  display: flex;
+  width: 60%;
+  gap: 10px;
+}
+
+.portfolio_card {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex: 1;
+  align-items: stretch;
+  height: 300px;
+  width: 150px;
+}
+
+.portfolio_card img {
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.card_top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.card_top {
+  overflow: hidden;
+  height: 75%;
+}
+
+.card_bottom {
+  text-align: center;
+  font-size: var(--type-paragraph-small);
+  height: 25%;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  padding: 0.5em 2em;
+  line-height: 1.3;
+}
+
+.card_bottom a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card_bottom p:focus,
+.card_bottom p:active,
+.card_bottom p:hover {
+  outline: none;
+}
+
+.portfolio-tecnologias {
+  margin: 0 auto;
+  width: 50%;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  padding: 0.5em;
+}
+
+.portfolio_tecnologias-h1 {
+  text-align: center;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+.portfolio_tecnologias-iconos {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.portfolio_tecnologias-icono img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
 /* MEDIA QUERIES */
+@media (max-width: 576px) {
+  .navbar__item {
+    font-size: 0.6rem;
+  }
+
+  .main__title {
+    font-size: 2rem;
+  }
+
+  .portfolio_intro {
+    width: 100%;
+  }
+
+  .portfolio_title {
+    font-size: var(--type-paragraph-large);
+  }
+
+  .portfolio_text {
+    font-weight: 300;
+    font-size: var(--type-paragraph-md);
+    text-align: center;
+  }
+
+  .portfolio_container {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .portfolio_card {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer {
+    font-size: var(--type-paragraph-footer-mini);
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .navbar__item {
+    font-size: 0.7rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  .portfolio {
+    width: 100%;
+  }
+
+  .portfolio_intro {
+    width: 90%;
+  }
+  .portfolio_container {
+    flex-direction: row;
+    width: 90%;
+  }
+
+  .footer {
+    font-size: var(--type-paragraph-footer-mini);
+  }
+}
+
 @media (max-width: 768px) {
   .navbar__list {
     display: none;
@@ -244,6 +452,50 @@ img {
 
   .main__minisubtitle {
     font-size: 4vw;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar__item {
+    font-size: 0.8rem;
+  }
+
+  .portfolio_container {
+    gap: 20px;
+    flex-direction: row;
+  }
+
+  .cards {
+    padding: 1.5em;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .navbar__item {
+    font-size: 0.85rem;
+  }
+
+  .portfolio_container {
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  .cards {
+    padding: 2em;
+  }
+}
+
+@media (min-width: 1441px) {
+  .navbar__item {
+    font-size: 1rem;
+  }
+
+  .portfolio_container {
+    gap: 30px;
+  }
+
+  .cards {
+    padding: 2.5em;
   }
 }
 

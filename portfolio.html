@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Parallax</title>
+  </head>
+  <body>
+    <!-- contenido del sitio -->
+    <div class="container">
+      <header class="header">
+        <nav class="navbar">
+          <input type="checkbox" id="menu-btn" class="menu-btn" />
+          <label for="menu-btn" class="menu-btn-label">
+            <div></div>
+            <div></div>
+            <div></div>
+          </label>
+          <ul class="navbar__list">
+            <li class="navbar__item"><a href="index.html">inicio</a></li>
+            <li class="navbar__item"><a href="nosotros.html">nosotros</a></li>
+            <li class="navbar__item"><a href="servicios.html">servicios</a></li>
+            <li class="navbar__item active">portfolio</li>
+            <li class="navbar__item"><a href="soporte.html">soporte</a></li>
+            <li class="navbar__item"><a href="contacto.html">contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="col porfolio">
+        <h1 class="portfolio_title">nuestros trabajos</h1>
+
+        <div class="portfolio">
+          <section class="portfolio_intro">
+            <p class="portfolio_text">
+              Somos un equipo de desarrolladores de software apasionados por
+              crear soluciones innovadoras y funcionales. Nos especializamos en
+              el diseño y desarrollo de páginas web personalizadas, adaptadas a
+              las necesidades de cada cliente. Desde la concepción de la idea
+              hasta el prototipado y maquetación, nos aseguramos de que cada
+              proyecto refleje calidad, eficiencia y creatividad.
+            </p>
+            <p class="portfolio_text">
+              Explora algunos de los sitios web que hemos diseñado y
+              desarrollado para diversas industrias, y descubre cómo podemos
+              ayudarte a llevar tu negocio al siguiente nivel.
+            </p>
+          </section>
+          <section class="portfolio_container">
+            <div class="portfolio_card">
+              <div class="card_top">
+                <a
+                  href="https://luciano-uade.github.io/parallax/"
+                  target="_blank"
+                >
+                  <img src="./img/Captura.PNG" alt="captura de la pagina" />
+                </a>
+              </div>
+              <div class="card_bottom">
+                <a
+                  href="https://luciano-uade.github.io/parallax/"
+                  target="_blank"
+                >
+                  <p>Empresa: Parallax</p>
+                  <p>
+                    Es una compañía que se encarga de brindar servicios de
+                    software, tales como desarrollo de páginas web, entre otras.
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio_card">
+              <div class="card_top">
+                <img
+                  src="./img/segurmania_provisional_reparaciones_destacada.jpg"
+                  alt="hombres construyendo"
+                />
+              </div>
+              <div class="card_bottom">
+                <p>En construccion...</p>
+              </div>
+            </div>
+          </section>
+
+          <div class="portfolio-tecnologias">
+            <h1 class="portfolio_tecnologias-h1">Tecnologías</h1>
+            <div class="portfolio_tecnologias-iconos">
+              <div class="portfolio_tecnologias-icono">
+                <img src="./img/html-icon-chico.png" alt="html logo" />
+              </div>
+              <div class="portfolio_tecnologias-icono">
+                <img src="./img/css-icon-chico.png" alt="css logo" />
+              </div>
+              <div class="portfolio_tecnologias-icono">
+                <img src="./img/bootstrap-icon-chico.png" alt="bootsrap logo" />
+              </div>
+              <div class="portfolio_tecnologias-icono">
+                <img src="./img/sass-icon-chico.png" alt="sass logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        "Todos los derechos reservados"-Sitio desarrollado para uso
+        educativo-2024 - Grupo 2 - Desarollo web - Curso 14016
+        <img src="./img/uade-logo-min.png" alt="Logo uade" />
+      </footer>
+    </div>
+  </body>
+</html>
