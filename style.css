@@ -282,6 +282,10 @@ img {
   display: block;
 }
 
+.card_bottom_text {
+  text-decoration: underline;
+}
+
 .card_bottom p:focus,
 .card_bottom p:active,
 .card_bottom p:hover {
